@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>CyberCode</title>
+   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -11,36 +12,22 @@
       <div class="container">
          <div class="row">
 
-            <div class="logo">CyberCode</div>
+            <img class="logo" src="css/img/logocybercode.PNG" alt="logo">
 
-            <div class="navegacion">
-               <ul>
+            <nav>
+               <ul class="nav_links">
                   <li><a href="#">Explorar</a></li>
                   <li><a href="#">Quienes Somos</a></li>
                   <li><a href="#">Comunidad</a></li>
                   <li><a href="#">Contacto</a></li>
                </ul>
-            </div>
+            </nav>
 
-            <div id="carrito">                  
-               <table id="lista-carrito" class="cars">
-                   <thead>
-                       <tr>
-                           <th>Imagen</th>
-                           <th>Nombre</th>
-                           <th>Precio</th>
-                           <th>Cantidad</th>
-                           <th></th>
-                       </tr>
-                   </thead>
-                   <tbody></tbody>
-               </table>
-
-               <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-            </div>   
-
+           <a class="cta" href="#"><button>Carrito</button></a> 
+         
          </div>
       </div>
+
    </header>
 
    <nav>
@@ -50,22 +37,182 @@
          </div>
          <div class="titulo">
             <h2>Aprende algo nuevo</h2>
-            <span>Todos los dias 24/7</span>
+            <p>Todos los dias 24/7</p>
          </div>
-         <div class="busqueda">
+         <form action="#" id="busqueda" method="post" class="formulario">
             <input type="text" placeholder="Que te gustaria aprender?">
-         </div>
+         </form>
       </div>
    </nav>
 
    <article>
-      <header class="header-curso">
-         <h3>Cursos Disponibles</h3>
-      </header>
-      cartas con los productos Disponibles
+
+      <div id="lista-cursos" class="container">
+
+         <div class="header-curso">
+            <h2>Cursos Disponibles</h2>
+         </div>
+
+         <div class="row">
+            <div class="four columns">
+               <div class="card">
+                   <img src="css/img/htmlcss.jpg" class="imagen-curso u-full-width">
+                   <div class="info-card">
+                       <h4>HTML5 y CSS3 para Principiantes</h4>
+                       <p>Juan Pedro</p>
+                       <p class="precio"> 
+                        <span class="u-pull-right ">$15</span>
+                        </p>
+                       <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                   </div>
+               </div> <!--Primera Carta-->
+           </div>
+
+           <div class="four columns">
+               <div class="card">
+                  <img src="css/img/javascript.png" class="imagen-curso u-full-width">
+                  <div class="info-card">
+                     <h4>Curso de JavaScript</h4>
+                     <p>Juan Pedro</p>
+                     <p class="precio"> 
+                        <span class="u-pull-right ">$15</span>
+                        </p>
+                     <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                  </div>
+               </div>
+            </div>  <!--Segunda Carta-->
+
+            <div class="four columns">
+               <div class="card">
+                   <img src="css/img/react.js.png" class="imagen-curso u-full-width">
+                   <div class="info-card">
+                       <h4>Curso de React.js</h4>
+                       <p>Juan Pedro</p>
+                       <p class="precio"> 
+                        <span class="u-pull-right ">$15</span>
+                        </p>
+                       <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                   </div>
+               </div> <!--Tercera Carta-->
+           </div>
+         </div>   <!--row-->
+
+         <div class="row">
+           <div class="four columns">
+               <div class="card">
+                  <img src="css/img/node.express.png" class="imagen-curso u-full-width">
+                  <div class="info-card">
+                     <h4>Curso de Node.js y Express</h4>
+                     <p>Juan Pedro</p>
+                     <p class="precio"> 
+                        <span class="u-pull-right ">$15</span>
+                        </p>
+                     <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                  </div>
+               </div> <!--Cuarta Carta-->
+           </div>
+
+            <div class="four columns">
+               <div class="card">
+                   <img src="css/img/sql.png" class="imagen-curso u-full-width">
+                   <div class="info-card">
+                       <h4>Bases de Datos SQL</h4>
+                       <p>Juan Pedro</p>
+                       <p class="precio"> 
+                        <span class="u-pull-right ">$15</span>
+                        </p>
+                       <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                   </div>
+               </div> <!--Quinta Carta-->
+           </div>
+
+           <div class="four columns">
+            <div class="card">
+                <img src="css/img/tailwind.png" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Curso de Tailwind</h4>
+                    <p>Juan Pedro</p>
+                    <p class="precio"> 
+                     <span class="u-pull-right ">$15</span>
+                     </p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                </div>
+            </div> <!--Sexta Carta-->
+         </div>  <!--row-->
+         
+         <div class="row">
+            <div class="four columns">
+               <div class="card">
+                   <img src="css/img/php.png" class="imagen-curso u-full-width">
+                   <div class="info-card">
+                       <h4>Curso de PHP</h4>
+                       <p>Juan Pedro</p>
+                       <p class="precio"> 
+                        <span class="u-pull-right ">$15</span>
+                        </p>
+                       <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                   </div>
+               </div> <!--Sexta Carta-->
+           </div>
+
+           <div class="four columns">
+               <div class="card">
+                  <img src="css/img/angular.png" class="imagen-curso u-full-width">
+                  <div class="info-card">
+                     <h4>Curso de Angular</h4>
+                     <p>Juan Pedro</p>
+                     <p class="precio"> 
+                        <span class="u-pull-right ">$15</span>
+                        </p>
+                     <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                  </div>
+               </div> <!--Septima Carta-->
+           </div>
+
+           <div class="four columns">
+               <div class="card">
+                  <img src="css/img/vue.png" class="imagen-curso u-full-width">
+                  <div class="info-card">
+                     <h4>Curso de Vue.js</h4>
+                     <p>Juan Pedro</p>
+                     <p class="precio"> 
+                        <span class="u-pull-right ">$15</span>
+                        </p>
+                     <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                  </div>
+               </div> <!--Octava Carta-->
+            </div>
+        </div>  <!--row-->
+
+      </div>
+
    </article>
-   <footer>
-      pie de pagina
-   </footer>
+
+
+   <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Para tu Negocio</a>
+                                <a class="enlace" href="#">Conviertete en Instructor</a>
+                                <a class="enlace" href="#">Aplicaciones Móviles</a>
+                                <a class="enlace" href="#">Soporte</a>
+                                <a class="enlace" href="#">Temas</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">¿Quienes Somos?</a>
+                                <a class="enlace" href="#">Empleo</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
 </body>
 </html>
